@@ -10,7 +10,7 @@ import '../node_modules/bootstrap/dist/js/bootstrap.js'
 import '../node_modules/jquery/dist/jquery.min'
 
 import './App.css';
-import './source-code-pro/source-code-pro.css'
+// import './source-code-pro/source-code-pro.css'
 
 
 export default class App extends React.Component {

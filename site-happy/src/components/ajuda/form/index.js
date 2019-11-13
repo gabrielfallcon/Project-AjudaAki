@@ -34,7 +34,8 @@ class Formulario extends React.Component {
             adicionaNome,
             adicionaEspecialidade,
             adicionaPreco,
-            adicionaLocal
+            adicionaLocal,
+            adicionarAjuda
         } = this.props
 
         return (

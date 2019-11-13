@@ -53,12 +53,18 @@ export const listarAjuda = () => {
 }
 
 export const adicionarAjuda = (codigo, nome, especialidade, preco, local) => {
+    
     return(dispatch) => {
         return axios.post(URL, {codigo, nome, especialidade, preco, local})
         .then(response =>{
             dispatch({
                 type : 'LIMPAR_FORM'
             })
-        })
+        },
+        
+            (err)=> {
+                console.log(err)
+            }
+        )
     }
 }
