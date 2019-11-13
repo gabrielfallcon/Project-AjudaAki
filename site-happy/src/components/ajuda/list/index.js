@@ -25,7 +25,7 @@ class Lista extends React.Component {
             <tr key={ajuda.id}>
                 <td class="text-center">{ajuda.nome}</td>
                 <td class="text-center">{ajuda.especialidade}</td>
-                <td class="text-center">{ajuda.preco}</td>
+                <td class="text-center">R${ajuda.preco}</td>
                 <td class="text-center">{ajuda.local}</td>
 
                 <td class="text-center">
@@ -58,7 +58,7 @@ class Lista extends React.Component {
                         <tr>
                             <th class="text-center">Nome</th>
                             <th class="text-center">Especialidade</th>
-                            <th class="text-center">R$</th>
+                            <th class="text-center">Preço</th>
                             <th class="text-center">Local</th>
                             <th class="text-center">Ação</th>
                         </tr>
