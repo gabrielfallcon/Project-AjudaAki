@@ -1,0 +1,29 @@
+{
+  "name": "projeto-happyday-react",
+  "version": "1.0.0",
+  "description": "Projeto de uma lista de eniversariante e de casamento",
+  "main": "loader.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielfallcon/HappyDay-react.git"
+  },
+  "author": "Gabriel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrielfallcon/HappyDay-react/issues"
+  },
+  "homepage": "https://github.com/gabrielfallcon/HappyDay-react#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1",
+    "node-restful": "^0.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
