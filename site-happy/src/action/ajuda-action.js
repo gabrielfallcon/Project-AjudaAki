@@ -38,9 +38,9 @@ export const adicionaLocal = e => {
 }
 
 export const listarAjuda = () => {
-    return (dispach) => {
+    return (dispatch) => {
         return axios.get(URL).then(response=>{
-            dispach({
+            dispatch({
                 type : 'LISTAR_AJUDA',
                 playload : response.data
             })
@@ -53,10 +53,10 @@ export const listarAjuda = () => {
 }
 
 export const adicionarAjuda = (codigo, nome, especialidade, preco, local) => {
-    return(dispach) => {
+    return(dispatch) => {
         return axios.post(URL, {codigo, nome, especialidade, preco, local})
         .then(response =>{
-            dispach({
+            dispatch({
                 type : 'LIMPAR_FORM'
             })
         })

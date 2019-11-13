@@ -118,11 +118,15 @@ section {
 }
 
 .listSection{
-  height: 600px;
+  height: 900px;
   justify-content: center;
   flex-direction: column;
   background-image: linear-gradient(white, #7159c1);
   color: rgb(113, 89, 193);
   margin: 10px;
+}
+.table{
+  max-height:700px;
+  overflow-y:auto;
 }
 

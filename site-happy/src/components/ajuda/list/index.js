@@ -23,11 +23,11 @@ class Lista extends React.Component {
 
         return ajuda.map(ajuda => (
             <tr key={ajuda.id}>
-                <td>{ajuda.nome}</td>
-                <td>{ajuda.especialidade}</td>
-                <td>{ajuda.preco}</td>
-                <td>{ajuda.local}</td>
-                <td>
+                <td class="text-center">{ajuda.nome}</td>
+                <td class="text-center">{ajuda.especialidade}</td>
+                <td class="text-center">{ajuda.preco}</td>
+                <td class="text-center">{ajuda.local}</td>
+                <td class="text-center">
                 <button className="btn btn-success mr-3"
                     // onClick={() => this.props.consultarCurso(curso)}
                 >
@@ -46,15 +46,16 @@ class Lista extends React.Component {
 
     render(){
         return(
-            <div class="my-5">
+            <div class="my-5 table">
                 <h3 class="my-5">Ajudas Disponiveis:</h3>
-                <table className="table table-striped">
+                <table className="table table-striped ">
                     <thead>
                         <tr>
-                            <th>Nome</th>
-                            <th>Especialidade</th>
-                            <th>R$</th>
-                            <th>Local</th>
+                            <th class="text-center">Nome</th>
+                            <th class="text-center">Especialidade</th>
+                            <th class="text-center">R$</th>
+                            <th class="text-center">Local</th>
+                            <th class="text-center">Ação</th>
                         </tr>
                     </thead>
                     <tbody>
