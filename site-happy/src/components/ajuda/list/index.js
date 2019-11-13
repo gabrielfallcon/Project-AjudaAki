@@ -27,8 +27,10 @@ class Lista extends React.Component {
                 <td class="text-center">{ajuda.especialidade}</td>
                 <td class="text-center">{ajuda.preco}</td>
                 <td class="text-center">{ajuda.local}</td>
+
                 <td class="text-center">
-                <button className="btn btn-success mr-3"
+
+                {/* <button className="btn btn-success mr-3"
                     // onClick={() => this.props.consultarCurso(curso)}
                 >
                     <i className="fa fa-check"></i>
@@ -38,8 +40,11 @@ class Lista extends React.Component {
                     // onClick={() => this.props.removerCurso(curso)}
                     >
                     <i className="fa fa-trash-o"></i>
-                </button>
+                </button> */}
+                <button className="btn btn-outline-dark">Contratar</button>
+
                 </td>
+
             </tr>
         ))
     }
