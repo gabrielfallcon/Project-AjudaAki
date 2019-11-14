@@ -10,7 +10,9 @@ import {createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import reducers from './reducer'
 
-const createStoreWithMiddleware = applyMiddleware(thunk)(createStore)
+import {confirmMiddleware} from './middleware/confirmContract'
+
+const createStoreWithMiddleware = applyMiddleware(thunk,confirmMiddleware)(createStore)
 
 // const store = createStore(reducers);
 

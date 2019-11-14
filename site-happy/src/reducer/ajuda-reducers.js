@@ -5,15 +5,7 @@ const INITIAL_STATE = {
     especialidade : '',
     preco         : '',
     local         : '',
-    lista         : [
-        {
-            _id:'-1',
-             nome:'Vinicius',
-             especialidade:'NodeJs',
-             preco:'250',
-             local:'São Paulo - Brazil'
-        }
-    ]
+    lista         : []
 
 }
 

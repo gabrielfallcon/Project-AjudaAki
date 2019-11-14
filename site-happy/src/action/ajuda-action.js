@@ -41,8 +41,9 @@ export const listarAjuda = () => {
     return (dispatch) => {
         return axios.get(URL).then(response=>{
             dispatch({
-                type : 'LISTAR_AJUDA',
-                playload : response.data
+                type     : 'LISTAR_AJUDA',
+                playload : response.data,
+                listar   : true
             })
         },
             (err)=> {
@@ -58,7 +59,8 @@ export const adicionarAjuda = (codigo, nome, especialidade, preco, local) => {
         return axios.post(URL, {codigo, nome, especialidade, preco, local})
         .then(response =>{
             dispatch({
-                type : 'LIMPAR_FORM'
+                type     : 'LIMPAR_FORM',
+                addAjuda : true
             })
         },
         

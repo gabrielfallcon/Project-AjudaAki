@@ -89,7 +89,7 @@ class Formulario extends React.Component {
                     <div className="form-group row">
                         <button className="btn btn-dark text-white"
                         onClick={
-                            adicionarAjuda(
+                            () =>adicionarAjuda (
                                 codigo,
                                 nome,
                                 especialidade,

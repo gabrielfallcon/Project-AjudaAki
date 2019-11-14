@@ -14,7 +14,7 @@ const mapDispatchToProps = dispatch => bindActionCreators({
 
 class Lista extends React.Component {
 
-    componentWillMount() {
+    componentDidUpdate() {
         this.props.listarAjuda()
     }
 
